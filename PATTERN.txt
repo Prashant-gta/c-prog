@@ -1,0 +1,61 @@
+#include<stdio.h>
+int main ()
+{
+	int i,j;
+	for(i=4;i>0;i--)
+	{
+		for(j=i;j>0;j--)
+			printf("*");
+		printf("\n");
+	}
+	getch();
+	return 0;
+}
+o/p:
+****
+***
+**
+*
+
+___________________________
+___________________________
+//check if the 3 digit number is prime or not
+#include<stdio.h>
+int main()
+{
+	int i,n;
+	printf("Enter a 3 digit number ");
+	scanf("%d",&n);
+	if((n>=100)&&(n<=999))
+	{
+	if((n%2==0)||(n%3==0)||(n%5==0)||(n%7==0)||(n%11==0))
+		printf("NOT a prime number");
+	else
+		printf("PRIME number");
+	}
+	else
+		printf("Please enter a valid 3 digit number");
+	getch();
+	return 0;
+}
+_______________________________
+_______________________________
+#include<stdio.h>
+int main ()
+{
+	int a[10];
+	int i,t,m;
+	printf("Enter 10 Numbers ");
+	for(i=0;i<=9;i++)
+		scanf("%d",a);
+	printf("\nEnter number to insert in the beginning");
+	scanf("%d",&m);
+	for(i=9;i>=0;i--)
+		a[i]=a[i-1];
+	a[0]=m;
+	for(i=0;i<=9;i++)
+		printf("\n%d",a[i]);
+	
+	getch();
+	return 0;
+}
